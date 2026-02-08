@@ -58,49 +58,86 @@
             //Part2-Q1
 
 
+            //            using System;
+
+            //class Program
+            //        {
+            //            static void Main()
+            //            {
+            //                Console.Write("Enter array size: ");
+            //                int size = int.Parse(Console.ReadLine());
+
+            //                int[] numbers = new int[size];
+            //                int sum = 0;
+
+            //                for (int i = 0; i < size; i++)
+            //                {
+            //                    Console.Write($"Enter element [{i}]: ");
+            //                    numbers[i] = int.Parse(Console.ReadLine());
+            //                    sum += numbers[i];
+            //                }
+
+            //                int max = numbers[0];
+            //                int min = numbers[0];
+
+            //                for (int i = 1; i < size; i++)
+            //                {
+            //                    if (numbers[i] > max)
+            //                        max = numbers[i];
+
+            //                    if (numbers[i] < min)
+            //                        min = numbers[i];
+            //                }
+
+            //                double average = (double)sum / size;
+
+            //                Console.WriteLine("Sum = " + sum);
+            //                Console.WriteLine("Average = " + average);
+            //                Console.WriteLine("Max = " + max);
+            //                Console.WriteLine("Min = " + min);
+
+            //                Console.Write("Reverse = ");
+            //                for (int i = size - 1; i >= 0; i--)
+            //                {
+            //                    Console.Write(numbers[i] + " ");
+            //                }
+            //            }
+            //        }
+
+
+
+
+
+
+            //Part2-Q2
+
+
+
 //            using System;
 
 //class Program
 //        {
 //            static void Main()
 //            {
-//                Console.Write("Enter array size: ");
-//                int size = int.Parse(Console.ReadLine());
+//                int[,] grades = new int[3, 4];
+//                double totalSum = 0;
 
-//                int[] numbers = new int[size];
-//                int sum = 0;
-
-//                for (int i = 0; i < size; i++)
+//                for (int student = 0; student < 3; student++)
 //                {
-//                    Console.Write($"Enter element [{i}]: ");
-//                    numbers[i] = int.Parse(Console.ReadLine());
-//                    sum += numbers[i];
+//                    double studentSum = 0;
+//                    Console.WriteLine($"Enter grades for Student {student + 1}:");
+
+//                    for (int subject = 0; subject < 4; subject++)
+//                    {
+//                        grades[student, subject] = int.Parse(Console.ReadLine());
+//                        studentSum += grades[student, subject];
+//                        totalSum += grades[student, subject];
+//                    }
+
+//                    Console.WriteLine("Average = " + (studentSum / 4));
 //                }
 
-//                int max = numbers[0];
-//                int min = numbers[0];
-
-//                for (int i = 1; i < size; i++)
-//                {
-//                    if (numbers[i] > max)
-//                        max = numbers[i];
-
-//                    if (numbers[i] < min)
-//                        min = numbers[i];
-//                }
-
-//                double average = (double)sum / size;
-
-//                Console.WriteLine("Sum = " + sum);
-//                Console.WriteLine("Average = " + average);
-//                Console.WriteLine("Max = " + max);
-//                Console.WriteLine("Min = " + min);
-
-//                Console.Write("Reverse = ");
-//                for (int i = size - 1; i >= 0; i--)
-//                {
-//                    Console.Write(numbers[i] + " ");
-//                }
+//                Console.WriteLine("Overall Class Average = " + (totalSum / 12));
 //            }
 //        }
 
