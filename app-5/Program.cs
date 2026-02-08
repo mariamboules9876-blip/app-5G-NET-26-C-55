@@ -113,34 +113,110 @@
 
 
 
+            //            using System;
+
+            //class Program
+            //        {
+            //            static void Main()
+            //            {
+            //                int[,] grades = new int[3, 4];
+            //                double totalSum = 0;
+
+            //                for (int student = 0; student < 3; student++)
+            //                {
+            //                    double studentSum = 0;
+            //                    Console.WriteLine($"Enter grades for Student {student + 1}:");
+
+            //                    for (int subject = 0; subject < 4; subject++)
+            //                    {
+            //                        grades[student, subject] = int.Parse(Console.ReadLine());
+            //                        studentSum += grades[student, subject];
+            //                        totalSum += grades[student, subject];
+            //                    }
+
+            //                    Console.WriteLine("Average = " + (studentSum / 4));
+            //                }
+
+            //                Console.WriteLine("Overall Class Average = " + (totalSum / 12));
+            //            }
+            //        }
+
+
+
+
+
+
+
+
+
+            //Part3-Q1
+
+
+
 //            using System;
 
 //class Program
 //        {
+//            static double Add(double a, double b)
+//            {
+//                return a + b;
+//            }
+
+//            static double Subtract(double a, double b)
+//            {
+//                return a - b;
+//            }
+
+//            static double Multiply(double a, double b)
+//            {
+//                return a * b;
+//            }
+
+//            static double Divide(double a, double b)
+//            {
+//                if (b == 0)
+//                {
+//                    Console.WriteLine("Cannot divide by zero");
+//                    return 0;
+//                }
+//                return a / b;
+//            }
+
 //            static void Main()
 //            {
-//                int[,] grades = new int[3, 4];
-//                double totalSum = 0;
+//                Console.Write("Enter first number: ");
+//                double num1 = double.Parse(Console.ReadLine());
 
-//                for (int student = 0; student < 3; student++)
+//                Console.Write("Enter second number: ");
+//                double num2 = double.Parse(Console.ReadLine());
+
+//                Console.Write("Enter operation (+ - * /): ");
+//                char operation = Console.ReadLine()[0];
+
+//                double result = 0;
+
+//                switch (operation)
 //                {
-//                    double studentSum = 0;
-//                    Console.WriteLine($"Enter grades for Student {student + 1}:");
-
-//                    for (int subject = 0; subject < 4; subject++)
-//                    {
-//                        grades[student, subject] = int.Parse(Console.ReadLine());
-//                        studentSum += grades[student, subject];
-//                        totalSum += grades[student, subject];
-//                    }
-
-//                    Console.WriteLine("Average = " + (studentSum / 4));
+//                    case '+':
+//                        result = Add(num1, num2);
+//                        break;
+//                    case '-':
+//                        result = Subtract(num1, num2);
+//                        break;
+//                    case '*':
+//                        result = Multiply(num1, num2);
+//                        break;
+//                    case '/':
+//                        result = Divide(num1, num2);
+//                        break;
+//                    default:
+//                        Console.WriteLine("Invalid operation");
+//                        return;
 //                }
 
-//                Console.WriteLine("Overall Class Average = " + (totalSum / 12));
+//                Console.WriteLine("Result = " + result);
 //            }
 //        }
-
 
     }
 }
