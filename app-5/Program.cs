@@ -153,70 +153,99 @@
 
 
 
+            //            using System;
+
+            //class Program
+            //        {
+            //            static double Add(double a, double b)
+            //            {
+            //                return a + b;
+            //            }
+
+            //            static double Subtract(double a, double b)
+            //            {
+            //                return a - b;
+            //            }
+
+            //            static double Multiply(double a, double b)
+            //            {
+            //                return a * b;
+            //            }
+
+            //            static double Divide(double a, double b)
+            //            {
+            //                if (b == 0)
+            //                {
+            //                    Console.WriteLine("Cannot divide by zero");
+            //                    return 0;
+            //                }
+            //                return a / b;
+            //            }
+
+            //            static void Main()
+            //            {
+            //                Console.Write("Enter first number: ");
+            //                double num1 = double.Parse(Console.ReadLine());
+
+            //                Console.Write("Enter second number: ");
+            //                double num2 = double.Parse(Console.ReadLine());
+
+            //                Console.Write("Enter operation (+ - * /): ");
+            //                char operation = Console.ReadLine()[0];
+
+            //                double result = 0;
+
+            //                switch (operation)
+            //                {
+            //                    case '+':
+            //                        result = Add(num1, num2);
+            //                        break;
+            //                    case '-':
+            //                        result = Subtract(num1, num2);
+            //                        break;
+            //                    case '*':
+            //                        result = Multiply(num1, num2);
+            //                        break;
+            //                    case '/':
+            //                        result = Divide(num1, num2);
+            //                        break;
+            //                    default:
+            //                        Console.WriteLine("Invalid operation");
+            //                        return;
+            //                }
+
+            //                Console.WriteLine("Result = " + result);
+            //            }
+            //        }
+
+
+
+
+            // Part3-Q2
+
+
 //            using System;
 
 //class Program
 //        {
-//            static double Add(double a, double b)
+//            static void CalculateCircle(double radius, out double area, out double circumference)
 //            {
-//                return a + b;
-//            }
-
-//            static double Subtract(double a, double b)
-//            {
-//                return a - b;
-//            }
-
-//            static double Multiply(double a, double b)
-//            {
-//                return a * b;
-//            }
-
-//            static double Divide(double a, double b)
-//            {
-//                if (b == 0)
-//                {
-//                    Console.WriteLine("Cannot divide by zero");
-//                    return 0;
-//                }
-//                return a / b;
+//                area = Math.PI * radius * radius;
+//                circumference = 2 * Math.PI * radius;
 //            }
 
 //            static void Main()
 //            {
-//                Console.Write("Enter first number: ");
-//                double num1 = double.Parse(Console.ReadLine());
+//                Console.Write("Enter radius: ");
+//                double radius = double.Parse(Console.ReadLine());
 
-//                Console.Write("Enter second number: ");
-//                double num2 = double.Parse(Console.ReadLine());
+//                CalculateCircle(radius, out double area, out double circumference);
 
-//                Console.Write("Enter operation (+ - * /): ");
-//                char operation = Console.ReadLine()[0];
-
-//                double result = 0;
-
-//                switch (operation)
-//                {
-//                    case '+':
-//                        result = Add(num1, num2);
-//                        break;
-//                    case '-':
-//                        result = Subtract(num1, num2);
-//                        break;
-//                    case '*':
-//                        result = Multiply(num1, num2);
-//                        break;
-//                    case '/':
-//                        result = Divide(num1, num2);
-//                        break;
-//                    default:
-//                        Console.WriteLine("Invalid operation");
-//                        return;
-//                }
-
-//                Console.WriteLine("Result = " + result);
+//                Console.WriteLine("Area = " + area);
+//                Console.WriteLine("Circumference = " + circumference);
 //            }
 //        }
+
 
     }
 }
